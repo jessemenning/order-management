@@ -7,7 +7,7 @@
     <flow-ref doc:name="Business Logic" doc:id="7a43735e-606d-44dd-b97f-9bd472b9fda4" name="BizLogic.COFFEE.ORDERMGT.STATUS.queue"/>
   </flow>
   <flow doc:id="f099ff34-b1ea-4725-8ec3-d74e8b017bb5" name="Ingress.COFFEE.ORDERMGT.NEWORDER.queue">
-    <solace:queue-listener doc:name="COFFEE.ORDERMGT.NEWORDER Listener" doc:id="1c2bfb37-6a10-4a06-90b1-249038546d33" ackMode="AUTOMATIC_ON_FLOW_COMPLETION" address="COFFEE.ORDERMGT.NEWORDER" config-ref="Solace_PubSub__Connector_Config"/>
+    <solace:queue-listener doc:name="COFFEE.ORDERMGT.NEWORDER Listener2" doc:id="1c2bfb37-6a10-4a06-90b1-249038546d33" ackMode="AUTOMATIC_ON_FLOW_COMPLETION" address="COFFEE.ORDERMGT.NEWORDER" config-ref="Solace_PubSub__Connector_Config"/>
     <json:validate-schema doc:name="Validate JSON schema" doc:id="47c08253-b54a-4716-87ab-fea5bff304ba" schema="schemas/CoffeeShop-NewOrder_0.2.0.json"/>
     <flow-ref doc:name="Business Logic" doc:id="3f188412-94c9-4ee8-93c0-edb8cf266e3b" name="BizLogic.COFFEE.ORDERMGT.NEWORDER.queue"/>
   </flow>
