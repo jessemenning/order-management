@@ -45,7 +45,7 @@ output application/json
 }]]></ee:set-payload>
       </ee:message>
     </ee:transform>
-    <flow-ref doc:name="Connect this to the correct egress flow" doc:id="990128ca-6e8c-4741-8919-b5a38fe9ea2d" name="Egress.OM-OrderUpdate.topic"/>
+    <flow-ref doc:name="Connect this to the correct egress flows" doc:id="990128ca-6e8c-4741-8919-b5a38fe9ea2d" name="Egress.OM-OrderUpdate.topic"/>
   </sub-flow>
   <sub-flow doc:id="3a12f42f-a210-405b-bcd4-a642bfa3e247" name="BizLogic.COFFEE.ORDERMGT.NEWORDER.queue">
     <ee:transform doc:id="a666f49d-61a2-4828-8490-d1a22f4e5ac8">
